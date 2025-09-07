@@ -1,0 +1,36 @@
+# -----------------
+# Backend (FastAPI / Python)
+# -----------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+instance/
+.env
+venv/
+env/
+*.log
+
+# -----------------
+# Frontend (React / Node)
+# -----------------
+node_modules/
+dist/
+build/
+.npm
+.yarn
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# -----------------
+# IDE / OS / Misc
+# -----------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
