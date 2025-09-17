@@ -1,0 +1,43 @@
+Instructions d’installation et d’exécution ⚙️
+
+1. Pré-requis à installer
+Avant d’exécuter le projet, il faut installer :
+- Python 3.10+ → langage utilisé pour le backend.
+- pip → gestionnaire de paquets Python (souvent installé avec Python).
+- Node.js et npm → nécessaires pour exécuter le frontend en ReactJS.
+- (Optionnel mais recommandé) Git → pour cloner le projet facilement.
+
+2. Cloner le projet
+git clone <lien-du-projet>
+cd <nom-du-dossier>
+
+3. Installer les dépendances du backend (Flask + SQLAlchemy + autres)
+Créer un environnement virtuel puis installer les modules :
+python -m venv venv
+source venv/bin/activate   # (Linux/Mac)
+venv\Scripts\activate      # (Windows)
+pip install -r requirements.txt
+
+Si le fichier requirements.txt n’existe pas, installer manuellement :
+pip install flask flask_sqlalchemy uvicorn
+
+4. Configurer la base de données (SQLite)
+Aucune installation externe n’est nécessaire car SQLite est intégré à Python.
+La base sera créée automatiquement lors de la première exécution.
+
+5. Lancer le serveur backend (Flask avec Uvicorn)
+Depuis le dossier du backend :
+uvicorn main:app --reload
+Le serveur API est accessible sur :
+http://127.0.0.1:8000
+
+6. Installer les dépendances du frontend (ReactJS)
+Aller dans le dossier frontend puis exécuter :
+npm install
+npm start
+Le frontend est accessible sur :
+http://localhost:3000
+
+7. Accéder à l’application
+- Frontend (interface utilisateur) : http://localhost:3000
+- Backend (API Flask) : http://localhost:8000
