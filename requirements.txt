@@ -1,0 +1,6 @@
+Requirements for the project:
+
+- Python 3.10+ → langage utilisé pour le backend.
+- pip → gestionnaire de paquets Python (souvent installé avec Python).
+- Node.js et npm → nécessaires pour exécuter le frontend en ReactJS.
+- (Optionnel mais recommandé) Git → pour cloner le projet facilement.
